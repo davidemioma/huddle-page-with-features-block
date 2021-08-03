@@ -1,0 +1,269 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.8rem;
+  background: hsl(193, 100%, 96%);
+  display: grid;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p {
+  line-height: 1.5;
+  color: hsl(208, 11%, 55%);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+.header {
+  background: url(../images/bg-hero-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: hsl(193, 100%, 96%);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav_bar {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+}
+
+.nav_btn {
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  white-space: nowrap;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  font-weight: 700;
+  justify-self: end;
+  border: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 100px;
+    align-self: center;
+  }
+
+  .nav_btn {
+    width: 100px;
+    font-size: 1rem;
+  }
+}
+
+.header_grid {
+  display: grid;
+}
+
+.h_heading {
+  margin-bottom: 2rem;
+}
+
+.header_content {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .header_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .header_content {
+    align-self: center;
+    text-align: left;
+  }
+}
+
+.btn {
+  margin-top: 2rem;
+  padding: 1rem 3rem;
+  border-radius: 30px;
+  background: hsl(322, 100%, 66%);
+  color: #fff;
+  border: 0;
+}
+
+.header_img {
+  margin-top: 4rem;
+  width: 80%;
+  justify-self: center;
+}
+
+.block .container {
+  border-radius: 30px;
+  background: #fff;
+  margin-top: 6rem;
+  padding: 3rem 2rem;
+}
+
+.block_grid {
+  display: grid;
+  gap: 5rem;
+  justify-items: center;
+}
+
+.img {
+  width: 80%;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h2 {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .block_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .content {
+    text-align: left;
+  }
+}
+
+.box {
+  margin-top: 5rem;
+  padding: 4rem 3rem;
+  border-radius: 30px;
+  background: #fff;
+  text-align: center;
+  transform: translateY(50%);
+}
+
+@media screen and (min-width: 1024px) {
+  .box {
+    width: 50%;
+  }
+}
+
+.footer {
+  background: hsl(192, 100%, 9%);
+  padding: 15rem 3rem 3rem 3rem;
+}
+
+.footer_grid {
+  display: grid;
+  gap: 4rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.top {
+  display: grid;
+  gap: 3rem;
+}
+
+.top > img {
+  filter: brightness(0) invert(1);
+}
+
+.top_content {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+
+.middle {
+  display: grid;
+  gap: 3rem;
+}
+
+.middle > a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  color: hsl(208, 11%, 55%);
+}
+
+@media screen and (min-width: 1024px) {
+  .middle {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 20px);
+    align-self: center;
+    justify-items: center;
+  }
+
+  .middle > a {
+    font-size: 1.6rem;
+  }
+}
+
+.bottom {
+  display: flex;
+  gap: 1.5rem;
+  justify-self: center;
+}
+
+.bottom .icon_container {
+  width: 64px;
+  height: 64px;
+  border: 1px solid #fff;
+  border-radius: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bottom .icon {
+  width: 30px;
+  height: 30px;
+  filter: brightness(0) invert(1);
+}
+
+@media screen and (min-width: 1024px) {
+  .bottom {
+    align-self: center;
+  }
+
+  .bottom .icon_container {
+    width: 42px;
+    height: 42px;
+  }
+
+  .bottom .icon {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.copyright {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .copyright {
+    text-align: right;
+  }
+}
